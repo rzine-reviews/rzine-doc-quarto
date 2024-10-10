@@ -5,37 +5,18 @@
 
 ---
 
-Ce dépôt présente les fichiers de référence attendus pour la soumission d'un article Rzine et les consignes éditoriales. Vous y trouverez notamment le modèle template.qmd dont vous pouvez vous servir de référence pour initier votre contribution. 
+Ce [document](https://rzine-reviews.github.io/rzine-doc-quarto/) présente les fichiers de référence attendus pour la soumission d'un article Rzine et les consignes éditoriales. Vous y trouverez notamment le modèle template.qmd dont vous pouvez vous servir de référence pour initier votre contribution.
 
-## Fichiers et dossiers obligatoires attendus
+Le modèle quarto Rzine est accessible en saisissant cette instruction dans votre terminal :
 
-- index.qmd : document Quarto contenant votre contribution. Il est impératif que ce fichier soit nommé **index.qmd**. 
-- index.html : votre contribution déployée au format .html
-- un dossier **data** qui contient les données que vous mobilisez.
-- un dossier **fig** qui contient les éventuelles figures que vous intégrez à l'article. 
-- un fichier **bibliogaphy.bib** qui contient les références bibliographiques. 
-
-Pour suivre la fiche de style rzine, il est nécessaire d'inclure à votre soumission le dossier **_extensions**, dont vous n'avez pas à modifier le contenu. 
-
-
-## Processus de soumission 
-
-1. **Consultez attentivement les consignes éditoriales** pour être sûr.e de ne pas travailler pour rien :-)
-3. **Téléchargez l'archive de ce dépôt exemple** et décompressez la.
-3. A vous de jouer pour adapter ces fichiers modèle à votre contribution ! 
-4. Déposez votre travail sur un **dépôt GitHub**. Pour les néophytes, la démarche à suivre est détaillée ci-dessous. 
-5. **Contactez le comité de lecture Rzine** pour soumettre votre fiche à l'évaluation. Pour cela envoyez un courriel à **contact@rzine.fr** en précisant l'adresse du dépôt qui héberge votre article. Vous serez contacté dans les 15 jours suivant de courriel. 
-6. **Relecture**. Si votre soumission est validée, un relecteur·rice doté·e des connaissances techniques et thématiques nécessaires sera proposé·e à l’auteur·e dans les 15 jours (vous pouvez aussi proposer des noms=. Rzine est dans une démarche volontariste d’Open Science. La relecture des fiches Rzine est ouverte et transparente. L’identité du ou des relecteur·rice·s et l’ensemble de leurs retours sont publics. Parce qu’une fiche est un document computationnel, l’ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche au relecteur·rice désigné·e. Les retours et les demandes d’améliorations se feront directement sur la plateforme GitHub via des issues et des pull-request.
-7. **Publication**. Une fois les demandes d’améliorations prises en compte et la publication validée par l’évaluateur·rice, une fiche de métadonnées associée à la publication vous sera demandée afin d’assurer son référencement sur Rzine.fr. Votre dépôt est ensuite cloné dans le dépôt GitLab Rzine, et la publication déployée depuis celui-ci. Un DOI sera associé à la publication, qui sera également référencée sur HAL et sur Rzine.fr.
-
-<p align="center">
-Ce schéma résume le processus de relecture dans son ensemble :
-
-<img src="figures/cycle_publi.png" width="500"/>
-</p>
+```
+quarto use template rzine-reviews/rzine-template-quarto
+```
 
 
 ## Initier votre article avec GitHub
+
+Ceci est un mémo des étapes nécessaires pour configurer un compte GitHub, qui servira de réceptacle à votre article. 
 
 Le logiciel de gestion de versions décentralisé à utiliser pour la soumission est le plus connu et le plus utilisé dans le monde : [GitHub](https://fr.wikipedia.org/wiki/GitHub). 
 
