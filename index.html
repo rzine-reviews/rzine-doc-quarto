@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="keywords" content="template, consignes éditoriales, modèle">
+
+<title>Publier un article Rzine</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #f0aa0c;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: #f0aa0c;
+background: #0c3762;
+      }
+</style>
+<style>
+h1 {
+color: #f0aa0c;
+}
+</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="_extensions/rzine/styles.css">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Publier un article Rzine</h1>
+            <p class="subtitle lead">Mode d’emploi, critères éditoriaux, mise en page et processus de publication</p>
+                      </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Auteur·rice·s</div>
+    <div class="quarto-title-meta-heading">Affiliations</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://rzine.fr/">Anonyme 1</a> <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Comité éditorial Rzine
+            </p>
+        </div>
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://rzine.fr/">Anonyme 2</a> <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Comité éditorial Rzine
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">5 septembre 2024</p>
+      </div>
+    </div>
+    
+      
+      <div>
+      <div class="quarto-title-meta-heading">Doi</div>
+      <div class="quarto-title-meta-contents">
+        <p class="doi">
+          <a href="https://doi.org/10.888.222">10.888.222</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Résumé</div>
+      <p>Cette fiche présente le modèle Quarto d’un Article Rzine et les consignes éditoriales élémentaires à suivre.</p>
+    </div>
+  </div>
+
+  <div>
+    <div class="keywords">
+      <div class="block-title">Mots clés</div>
+      <p>template, consignes éditoriales, modèle</p>
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table des matières</h2>
+   
+  <ul>
+  <li><a href="#un-article-rzine" id="toc-un-article-rzine" class="nav-link active" data-scroll-target="#un-article-rzine">Un article Rzine</a></li>
+  <li><a href="#critères-dacceptation" id="toc-critères-dacceptation" class="nav-link" data-scroll-target="#critères-dacceptation">Critères d’acceptation</a></li>
+  <li><a href="#le-processus-dédition" id="toc-le-processus-dédition" class="nav-link" data-scroll-target="#le-processus-dédition">Le processus d’édition</a></li>
+  <li><a href="#modèle-rzine-et-contenu" id="toc-modèle-rzine-et-contenu" class="nav-link" data-scroll-target="#modèle-rzine-et-contenu">Modèle Rzine et contenu</a>
+  <ul class="collapse">
+  <li><a href="#métadonnées-du-document-yaml" id="toc-métadonnées-du-document-yaml" class="nav-link" data-scroll-target="#métadonnées-du-document-yaml">Métadonnées du document (YAML)</a></li>
+  <li><a href="#les-blocs-de-texte-markdown" id="toc-les-blocs-de-texte-markdown" class="nav-link" data-scroll-target="#les-blocs-de-texte-markdown">Les blocs de texte (markdown)</a>
+  <ul class="collapse">
+  <li><a href="#syntaxe-de-base" id="toc-syntaxe-de-base" class="nav-link" data-scroll-target="#syntaxe-de-base">Syntaxe de base</a></li>
+  <li><a href="#formules-mathématiques" id="toc-formules-mathématiques" class="nav-link" data-scroll-target="#formules-mathématiques">Formules mathématiques</a></li>
+  <li><a href="#otions-utiles-avec-quarto" id="toc-otions-utiles-avec-quarto" class="nav-link" data-scroll-target="#otions-utiles-avec-quarto">Otions utiles avec Quarto</a></li>
+  </ul></li>
+  <li><a href="#les-blocs-de-code-chunks" id="toc-les-blocs-de-code-chunks" class="nav-link" data-scroll-target="#les-blocs-de-code-chunks">Les blocs de code (chunks)</a>
+  <ul class="collapse">
+  <li><a href="#initier-et-paramétrer-un-chunk" id="toc-initier-et-paramétrer-un-chunk" class="nav-link" data-scroll-target="#initier-et-paramétrer-un-chunk">Initier et paramétrer un chunk</a></li>
+  <li><a href="#insérer-une-image" id="toc-insérer-une-image" class="nav-link" data-scroll-target="#insérer-une-image">Insérer une image</a></li>
+  </ul></li>
+  <li><a href="#références" id="toc-références" class="nav-link" data-scroll-target="#références">Références</a>
+  <ul class="collapse">
+  <li><a href="#bibliographie" id="toc-bibliographie" class="nav-link" data-scroll-target="#bibliographie">Bibliographie</a></li>
+  <li><a href="#glossaire" id="toc-glossaire" class="nav-link" data-scroll-target="#glossaire">Glossaire</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#données-utilisées" id="toc-données-utilisées" class="nav-link" data-scroll-target="#données-utilisées">Données utilisées</a>
+  <ul class="collapse">
+  <li><a href="#exemple" id="toc-exemple" class="nav-link" data-scroll-target="#exemple">Exemple</a></li>
+  </ul></li>
+  <li><a href="#compiler-une-fiche-rzine-au-format-html" id="toc-compiler-une-fiche-rzine-au-format-html" class="nav-link" data-scroll-target="#compiler-une-fiche-rzine-au-format-html">Compiler une fiche Rzine au format HTML</a></li>
+  
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliographie</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<section id="un-article-rzine" class="level1">
+<h1>Un article Rzine</h1>
+<p>Il s’agit d’une <strong>publication didactique</strong> qui présente une <strong>méthodologie</strong>, un <strong>type d’analyse</strong>, <strong>une fonctionnalité</strong>, ou encore le <strong>traitement</strong> d’un certain type de données <strong>avec le langage R</strong>. Un article peut être principalement technique, méthodologique ou thématique ; il peut également couvrir ces trois aspects. Il est évalué par au moins deux personnes ayant les connaissances thématiques nécessaires.</p>
+<p>Le premier objectif d’un article consiste à <strong>partager de manière pédagogique des méthodes reproductibles applicables en SHS</strong>. La publication d’un article est ouverte à toutes et tous, quels que soient son statut et sa discipline. Un article peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.</p>
+<p>Un article Rzine est rédigé avec <strong>Quarto</strong>, un système open-source de publication d’articles scientifiques et techniques basé sur Pandoc. Il permet d’exploiter différents langages de programmation tels que R, Python, Julia ou JavaScript. Il applique le même principe de programmation lettrée que RMarkdown (précédent modèle Rzine), dont il représente une version plus moderne et facile à adapter à différents cadres d’utilisation. Quarto peut être utilisé en ligne de commande ou à travers d’autres logiciels comme RStudio ou Visual studio code.</p>
+<p>Le modèle Rzine Quarto est accessible ici : <strong><a href="lien%20définitif%20à%20renseigner">ici</a></strong></p>
+<ul>
+<li>Cette documentation présente les attendus (critères d’acceptation, modèle, format).</li>
+<li>Le <a href="lien%20définitif%20à%20renseigner">readme</a> associé au dépôt de cette documentation présente le prcessus de publication</li>
+</ul>
+</section>
+<section id="critères-dacceptation" class="level1">
+<h1>Critères d’acceptation</h1>
+<p>Afin d’assurer la cohérence et la qualité du contenu des articles Rzine, plusieurs critères d’acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d’une proposition d’article par le comité éditorial, d’autres critères font l’objet d’une analyse contradictoire par plusieurs évaluateur·rice·s.</p>
+<p>Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que :</p>
+<ul>
+<li>la <strong>démonstration soit contextualisée</strong> (champ disciplinaire d’application) et rigoureuse,</li>
+<li>le <strong>code présenté soit lisible, commenté et reproductible</strong>,</li>
+<li>les <strong>bibliothèques mobilisées (<em>packages</em>) soient brièvement décrits et leur utilisation justifiée</strong>,</li>
+<li>les <strong>données ou jeux de données utilisés dans le cadre de la démonstration soient obligatoirement accessibles, sourcés et librement réutilisables</strong>.</li>
+</ul>
+<p>La table ci-dessous présente les critères d’évaluation détaillés d’un article :</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Critères d’évaluation d’un article</strong></th>
+<th style="text-align: center;"><strong>Comité de lecture</strong></th>
+<th style="text-align: center;"><strong>Relecteur.rice.s</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Thématique</strong></td>
+<td>Concerne des méthodes applicables aux SHS</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td><strong>Thématique</strong></td>
+<td>Intérêt pour la communauté des utilisateurs de R en SHS</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td><strong>Thématique</strong></td>
+<td>Pas de fiche Rzine similaire déjà produite</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><strong>Contenu</strong></td>
+<td>Présentation des prérequis techniques et méthodologiques</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td><strong>Contenu</strong></td>
+<td>Contextualisation de l’analyse ou méthode présentée</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td><strong>Contenu</strong></td>
+<td>Présentation des prérequis techniques et méthodologiques</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td><strong>Contenu</strong></td>
+<td>Clarté et rigueur de la démonstration</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td><strong>Contenu</strong></td>
+<td>Rédaction dans un français ou un anglais correct</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td><strong>Contenu</strong></td>
+<td>Respect des consignes éditoriales détaillées ci-dessous</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><strong>Contenu</strong></td>
+<td>Moins de 85000 caractères (code compris) (<code>*</code>)</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><strong>Contenu</strong></td>
+<td>Pas de renvoi publicitaire explicite</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><strong>Contenu</strong></td>
+<td>Acceptation des futures conditions d’utilisation <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC-BY-SA</a> <code>**</code></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><strong>Code</strong></td>
+<td>Justification (et stabilité) des packages utilisés <code>***</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td><strong>Code</strong></td>
+<td>Clarté (indentation, commentaire…) et reproductibilité du code présenté</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td><strong>Données</strong></td>
+<td>Données utilisées libres, sourcées et mises à disposition</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td><strong>Données</strong></td>
+<td>Respect du Règlement Général sur la Protection des Données</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<code>(*)</code> Dénombrer le nombre de caractères contenus dans un document Quarto
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La bibliothèque <code>rmdwc</code> et sa fonction <code>txtcount()</code> est utile à cette fin.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen=</span><span class="dv">999</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rmdwc)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="fu">txtcount</span>(<span class="st">"index.qmd"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>files<span class="sc">$</span>chars</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 24028</code></pre>
+</div>
+</div>
+<p>Ce document Quarto contient <strong><code>24028</code></strong> caractères, c’est optimal pour une publication Rzine !</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<code>(**)</code> Licence d’utilisation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Attention, être auteur.e d’un artcile Rzine, c’est accepter à ce que votre production soit mise à disposition sous les conditions d’utilisation de la licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"><strong>Creative Commons BY-SA 4.0</strong></a>.</p>
+<p>Vous autorisez ainsi quiconque à :</p>
+<ul>
+<li><strong>Partager</strong> — copier, distribuer et communiquer la fiche par tous moyens et sous tous formats</li>
+<li><strong>Adapter</strong> — remixer, transformer et créer à partir du matériel pour toute utilisation, y compris commerciale.</li>
+</ul>
+<p>Selon les conditions suivantes :</p>
+<ul>
+<li><strong>Attribution</strong> — L’Œuvre doit être crédité, un lien vers la licence doit être indiqué, tout comme les modifications effectuées à l’Oeuvre original. Ces informations doivent être indiquées par tous les moyens raisonnables, sans toutefois suggérer que l’Offrant (vous!) soutient la façon dont son Oeuvre a été utilisée.</li>
+<li><strong>Partage dans les Mêmes Conditions</strong> — Dans le cas où quelqu’un effectue un remix, transforme, ou crée à partir du matériel composant l’Oeuvre originale, il doit diffuser l’Oeuvre modifiée dans les même conditions, c’est à dire avec la même licence avec laquelle l’Oeuvre originale a été diffusée.</li>
+</ul>
+<p>Ainsi, le lien vers le code source de la fiche sera directement indiqué sur le document par le comité éditorial.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<code>(***)</code> Préférez l’usage de packages disponibles sur le CRAN
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Les <a href="https://cran.r-project.org/web/packages/policies.html">prérequis</a> définis par les mainteneurs du CRAN pour déposer et rendre accessible une <em>library</em> R garantissent leur qualité : CRAN effectue des vérifications poussées du code et n’accepte que des packages passant sans aucun avertissement sa batterie de tests. Ces packages s’installent aussi facilement dans l’interface RStudio et ne nécessitent pas l’usage de packages externes (<code>devtools</code>) ou de procédures d’installation plus complexe.</p>
+<p>Pour une plus grande pérénité du code inclut votre article et sa réutilisation dans des contextes variés, nous vous suggérons fortement de n’utiliser que des librairies disponibles sur le CRAN.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="le-processus-dédition" class="level1 page-columns page-full">
+<h1>Le processus d’édition</h1>
+<ol type="1">
+<li><strong>Consultez attentivement les consignes éditoriales</strong> pour être sûr.e de ne pas travailler pour rien :-)</li>
+<li><strong>Téléchargez l’archive de ce dépôt exemple</strong> et décompressez la.</li>
+<li>A vous de jouer pour adapter ces fichiers modèle à votre contribution !</li>
+<li>Déposez votre travail sur un <strong>dépôt GitHub</strong>. Pour les néophytes, la démarche à suivre est détaillée ci-dessous.</li>
+<li><strong>Contactez le comité de lecture Rzine</strong> pour soumettre votre fiche à l’évaluation. Pour cela envoyez un courriel à <strong>contact@rzine.fr</strong> en précisant l’adresse du dépôt qui héberge votre article. Vous serez contacté dans les 15 jours suivant de courriel.</li>
+<li><strong>Relecture</strong>. Si votre soumission est validée, un relecteur·rice doté·e des connaissances techniques et thématiques nécessaires sera proposé·e à l’auteur·e dans les 15 jours (vous pouvez aussi proposer des noms=. Rzine est dans une démarche volontariste d’Open Science. La relecture des fiches Rzine est ouverte et transparente. L’identité du ou des relecteur·rice·s et l’ensemble de leurs retours sont publics. Parce qu’une fiche est un document computationnel, l’ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche au relecteur·rice désigné·e. Les retours et les demandes d’améliorations se feront directement sur la plateforme GitHub via des issues et des pull-request.</li>
+<li><strong>Publication</strong>. Une fois les demandes d’améliorations prises en compte et la publication validée par l’évaluateur·rice, une fiche de métadonnées associée à la publication vous sera demandée afin d’assurer son référencement sur Rzine.fr. Votre dépôt est ensuite cloné dans le dépôt GitLab Rzine, et la publication déployée depuis celui-ci. Un DOI sera associé à la publication, qui sera également référencée sur HAL et sur Rzine.fr.</li>
+</ol>
+<p><br></p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/cycle_publi.png" class="img-fluid figure-img" width="579">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Le processus de relecture Rzine
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="modèle-rzine-et-contenu" class="level1 page-columns page-full">
+<h1>Modèle Rzine et contenu</h1>
+<p>Pour initier un article Rzine, il est conseillé de <strong>télécharger le modèle accessible <a href="url%20à%20rajouter">ici</a></strong> qui contient tous les fichiers utiles. Dézippez l’archive qui comprend :</p>
+<ul>
+<li>un document Quarto <strong>index.qmd</strong>, qui contient l’article principal.</li>
+<li>Un fichier <strong>README.md</strong>, à compléter à la fin de votre contribution.</li>
+<li>Un fichier BibTeX <strong>bibliography.bib</strong>, avec la bibliographie appelée dans le fichier index.qmd.</li>
+<li>Un dossier <strong>data</strong>, pour les données mobilisées dans l’article.</li>
+<li>Un dossier <strong>figures</strong>, pour les éventuelles figures inclues dans l’article.</li>
+<li>Un dossier **_extensions**, à ne pas modifier et qui contient les éléments de style de la revue.</li>
+</ul>
+<p>Adaptez ensuite le contenu de ces fichiers à votre soumission. L’architecture du fichier central <strong>index.qmd</strong> comprend plusieurs éléments à éditer : les <strong>métadonnées du document (YAML)</strong>, des <strong>blocs de texte en markdown</strong> et du <strong>code exécutable dans des chunks</strong>.</p>
+<section id="métadonnées-du-document-yaml" class="level2">
+<h2 class="anchored" data-anchor-id="métadonnées-du-document-yaml">Métadonnées du document (YAML)</h2>
+<p>L’en-tête d’un document Quarto (aussi appelé YAML) est délimité par deux lignes de pointillés et contient les métadonnées et les éléments de style du document.</p>
+<p>Il sert à recueillir le titre de votre contribution et des informations supplémentaires sur votre affiliation, des mots-clés, etc.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Le titre de votre contribution (obligatoire)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> Son sous titre (optionnel)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">  rzine-html: default (ne pas modifier)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> fr-FR (en-EN si anglais)</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2024-09-05" (date de dernière modification, obligatoire)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="an">authors:</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Prénom Nom (obligatoire)</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations:</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">      - name: L'organisme qui vous emploie (obligatoire)</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">        department: Votre laboratoire d'appartenance (optionnel)</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">        address: Adresse de votre laboratoire (optionnel)</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">        city: Ville d'appartenance du laboratoire (optionnel)</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">        country: Pays d'appartenance du laboratoire (optionnel)</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">        postal-code: Code postal du laboratoire (optionnel)</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co">    orcid: Vos identifiants ORCID (optionnel)</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">    url: URL qui renvoie vers votre blog/CV en ligne (optionnel)</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Si plusieurs auteurs (reproduire les champs ci-dessus)</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="an">abstract:</span><span class="co"> |</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">    Un résumé de votre contribution, aussi présent dans le REAME.md (obligatoire)</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="an">keywords:</span><span class="co"> [un mot clé, un deuxième mot clé] (obligatoire)</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="les-blocs-de-texte-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="les-blocs-de-texte-markdown">Les blocs de texte (markdown)</h2>
+<p>Le contenu écrit de votre contribution, expliquant <strong>votre démarche et la succession des traitements proposés</strong> est à écrire dans un langage de balisage léger, le <strong>markdown</strong>.</p>
+<section id="syntaxe-de-base" class="level3">
+<h3 class="anchored" data-anchor-id="syntaxe-de-base">Syntaxe de base</h3>
+<p>Le corps du document est constitué de texte en syntaxe Markdown. Le markdown est un langage de balisage léger et très facile à maîtriser.</p>
+<p>Il permet de définir des niveaux de titres, de mettre en forme le texte (gras, italique), d’ajouter des liens cliquables, etc.</p>
+<p>Par exemple, le texte suivant:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Ceci est du texte en *italique*, **gras** ou en ***Gras italique***.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Pour définir des listes à puces, utilisez les **tirets** :</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>premier élément</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>deuxième élément</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>Vous pouvez également ajouter des <span class="co">[</span><span class="ot">liens cliquables</span><span class="co">](https://rzine.fr/)</span> </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Se formalisera comme cela dans le fichier HTML produit à partir du R Markdown :</p>
+<p>Ceci est du texte en <em>italique</em>, <strong>gras</strong> ou en <strong><em>Gras italique</em></strong>.</p>
+<p>Pour définir des listes à puces, utilisez les <strong>tirets</strong> :</p>
+<ul>
+<li>premier élément</li>
+<li>deuxième élément</li>
+</ul>
+<p>Vous pouvez également ajouter des <a href="https://rzine.fr/">liens cliquables</a></p>
+<p>Pour en savoir plus, se reporter au <a href="https://www.markdownguide.org/cheat-sheet/">Markdown Guide</a>.</p>
+</section>
+<section id="formules-mathématiques" class="level3">
+<h3 class="anchored" data-anchor-id="formules-mathématiques">Formules mathématiques</h3>
+<p>Il est possible d’écrire des formules mathématiques en langage <span class="math inline">\TeX</span>. Pour cela, il suffit de délimiter le contenu <span class="math inline">\LaTeX</span> par <strong>un ou deux</strong> symboles <strong>$</strong>, ex :</p>
+<pre><code>$$ y = \sqrt{\frac{1}{x + \beta}} $$ </code></pre>
+<p>En mode <strong><em>Inline</em></strong> (<strong><code>$</code></strong>) , les formules sont incluses à l’intérieur du paragraphe courant, ex : <span class="math inline">\sum_{i=1}^n X_i</span></p>
+<p>En mode <strong><em>Displayed</em></strong> (<strong><code>$$</code></strong>), elles apparaissent centrées et mises en exergue, ex : <span class="math display"> y = \sqrt{\frac{1}{x + \beta}} </span></p>
+</section>
+<section id="otions-utiles-avec-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="otions-utiles-avec-quarto">Otions utiles avec Quarto</h3>
+<p>Quarto fournit plusieurs options qui ne relèvent pas du markdown mais utiles à connaître pour paramétrer son document.</p>
+<section id="callouts-blocks" class="level4">
+<h4 class="anchored" data-anchor-id="callouts-blocks">Callouts blocks</h4>
+<p>Les <a href="https://quarto.org/docs/authoring/callouts.html"><strong>callouts block</strong></a> sont utiles pour attirer l’attention sur certains concepts.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span> {.callout<span class="sc">-</span>tip}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Intéressés par la collection Rzine ?</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Consultez les [articles](https<span class="sc">:</span><span class="er">//</span>rzine.fr<span class="sc">/</span>articles_rzine<span class="sc">/</span>) déjà publiés <span class="sc">!</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[](figures<span class="sc">/</span>article_rzine.png)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Intéressés par la collection Rzine ?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consultez les <a href="https://rzine.fr/articles_rzine/">articles</a> déjà publiés !</p>
+<p><img src="figures/article_rzine.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Nous déconseillons en revanche l’usage des classes préformatées de type <code>tabset</code> dont la sortie n’est pas adaptée aux autres sorties qu’HTML.</p>
+</section>
+</section>
+</section>
+<section id="les-blocs-de-code-chunks" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="les-blocs-de-code-chunks">Les blocs de code (chunks)</h2>
+<p>Le code R est à inclure dans des chunks. Veillez à bien commenter votre code et qu’il soit aussi clair que possible. Veillez aussi à ce que l’ensemble des chunks s’exécutent sans erreur et qu’ils produisent bien les figures attendues dans le fichier HTML compilé en fin de processus.</p>
+<section id="initier-et-paramétrer-un-chunk" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="initier-et-paramétrer-un-chunk">Initier et paramétrer un chunk</h3>
+<p>Dans l’univers de Quarto, le code R s’exécute dans des <strong><em>chunks</em></strong>. Pour insérer un nouveau chunk, utilisez le menu <code>Code &gt; Insert Chunk</code> de RStudio. Vous pouvez également utiliser le raccourci clavier <code>Ctrl+Alt+i</code>.</p>
+<ul>
+<li>La première ligne <code>{r plot_basique}</code> ci-dessous définit le langage de programmation mobilisé et le nom du <em>chunk</em>. Il n’est pas obligatoire de nommer un chunk, mais cela peut être utile pour localiser une erreur lors de la compilation.</li>
+<li>Des options d’exécution qui permettent de paramétrer la sortie du code. Dans le <em>chunk</em> ci-dessous le code est évalué (<code>eval: true</code>), la sortie graphique sera de taille 3 (<code>fig-height: 3</code>) et de largeur 7 (<code>fig-width: 7</code>), elle dispose d’un label (<code>label: fig-1</code>) qui permet utilement de l’appeler dans le corps du texte avec <code>@fig-2</code> qui renvoie ceci dans le corps du document (<a href="#fig-2" class="quarto-xref">Figure&nbsp;2</a>) et d’un nom qui permet la numérotation et le nommage (<code>fig-cap: Un plot de base</code>) de la figure dans le document. De nombreuses autres options sont disponibles et documentées dans la <a href="https://quarto.org/docs/computations/execution-options.html">documentation</a> de Quarto.</li>
+<li>A noter que les options du chunk n’apparaîtront pas lors de la compilation du document, sauf si l’option <code>#| echo: fenced</code> est spécifiée.</li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r plot_basique}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| eval: true</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: Un plot de base</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-2</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-height: 3</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-width: 7</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="in">plot(1:10)</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display page-columns page-full">
+<div id="fig-2" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-2-1.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Un plot de base
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A noter qu’un document Quarto peut contenir des blocs de code issus de langages informatiques différents (ObservableJS, Python, etc). A titre d’exemple, vous pouvez consulter <a href="https://riatecom.github.io/sageo-2023/">ce document</a>, basé sur un document Quarto qui combine 3 langages de programmation.</p>
+</section>
+<section id="insérer-une-image" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="insérer-une-image">Insérer une image</h3>
+<p>Les images insérées dans l’article sont à déposer dans le dossier <code>figures</code>.</p>
+<p>Il existe plusieurs façons d’importer une image dans un document Quarto, notamment avec du markdown de base.</p>
+<p>Dans Rzine et pour un référencement optimal de la figure (label, numérotation, citation), privilégiez l’import de celle-ci dans un <em>chunk</em> en renseignant les options <code>#| label</code> (valeur unique requise) et <code>#| fig-cap</code>.</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-3</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: "Une bien belle image"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_graphics("figures/rzine-collection.png")</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display page-columns page-full">
+<div id="fig-3" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/rzine-collection.png" class="img-fluid figure-img" width="609">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Une bien belle image
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="références" class="level2">
+<h2 class="anchored" data-anchor-id="références">Références</h2>
+<p>Une bibliographie est a minima attendue. Elle sert à positionner votre contribution dans le champ thématique et/ou disciplinaire. Le glossaire est optionnel mais permet souvent utilement de rendre plus fluide le corps du document principal.</p>
+<section id="bibliographie" class="level3">
+<h3 class="anchored" data-anchor-id="bibliographie">Bibliographie</h3>
+<p>Les références bibliographiques sont à inclure dans le fichier bibliographie.bib situé à la racine du répertoire Rzine. Il s’agit d’un fichier au format BibTeX, qui sert à gérer et traiter des bases bibliographiques.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="sc">@</span>book{CameronTrivedi2013,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  author    <span class="ot">=</span> {A. Colin Cameron and Pravin K. Trivedi},</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  title     <span class="ot">=</span> {Regression Analysis of Count Data},</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  year      <span class="ot">=</span> {<span class="dv">2013</span>},</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  edition   <span class="ot">=</span> {<span class="dv">2</span>nd},</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  publisher <span class="ot">=</span> {Cambridge University Press},</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  address   <span class="ot">=</span> {Cambridge}</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>L’appel d’une ressource bibliographique dans le texte s’effectue ensuite au moyen de l’identifiant de bibliographie (<code>@CameronTrivedi2013</code> ici) et renvoie dans le document compilé une référence correctement formatée <span class="citation" data-cites="CameronTrivedi2013">Cameron et Trivedi (<a href="#ref-CameronTrivedi2013" role="doc-biblioref">2013</a>)</span> et rajoute une section de bibliographie en fin de document.</p>
+<p>Pour un apperçu complet des possibilités offertes pour référencer les sources de données, se reporter à <a href="https://bibtex.eu/types/">cette documentation</a>.</p>
+</section>
+<section id="glossaire" class="level3">
+<h3 class="anchored" data-anchor-id="glossaire">Glossaire</h3>
+<p>Pour que l’ensemble de la démonstration soit compréhensible par un public large, vous pouvez utiliser la section “glossaire” pour définir certains termes utilisés dans la fiche.</p>
+<p>Pour cela, il suffit d’utiliser la syntaxesuivante dans le corps du texte :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Voici un terme bien technique qui mériterait quelques précisions [<span class="sc">^</span><span class="dv">1</span>] et</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>un second référence [<span class="sc">^</span><span class="dv">2</span>]</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>[<span class="sc">^</span><span class="dv">1</span>]<span class="sc">:</span> Voici la définition du premier terme</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>[<span class="sc">^</span><span class="dv">2</span>]<span class="sc">:</span> Et le second</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Au moment de la compilation du document, un numéro est associé et affiché après le “mot à définir”. Et ce mot et sa définition seront ajoutés dans la section glossaire.</p>
+<p>Un lien interactif est alors automatiquement crée entre le “mot” dans le corps du texte et sa définition dans la section “Glossaire”.</p>
+<p>Par exemple, le bloc précédent produira ceci dans le document compilé.</p>
+<p>Voici un terme bien technique qui mériterait quelques précisions <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> et un second référence <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+</section>
+</section>
+<section id="données-utilisées" class="level1 page-columns page-full">
+<h1>Données utilisées</h1>
+<p>Tout lecteur.ice doit être en mesure de reproduire la démonstration de l’article sans contrainte de réutilisation. L’intégralité des données utilisées doivent ainsi :</p>
+<ul>
+<li>Être <strong>présentées et décrites</strong> dans l’article.</li>
+<li>Être <strong>libre d’utilisation et de diffusion</strong>.</li>
+<li>Être <strong>mises à disposition des lecteur.rice.s</strong>, même si ces données sont déjà en libre accès.</li>
+<li>Être <strong>associées à des métadonnées</strong> qui permettent de retracer et comprendre ces données.</li>
+<li>Respecter le <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees"><strong>règlement général sur la protection des données</strong></a>.</li>
+</ul>
+<p>Toutes les données chargées et utilisées dans une fiche devront être stockées dans le répertoire <strong>Data</strong>, disponible dans le dépôt GitHub.</p>
+<section id="exemple" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="exemple">Exemple</h2>
+<p>L’article Rzine <a href="https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html">Analyse Territoriale Multiscalaire</a> peut servir d’exemple.</p>
+<p>Les données mobilisées sont accessibles dans le dossier <code>data</code> :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>com <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/data.gpkg"</span>, <span class="at">layer =</span> <span class="st">"com"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(com)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 6 features and 8 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: 1028158 ymin: 6298718 xmax: 1055399 ymax: 6345970
+Projected CRS: RGF93_Lambert_93
+  INSEE_COM            NOM_COM      EPCI                   LIB_EPCI EPCI_SUB
+1     06006          Aspremont 200030195 Métropole Nice Côte d'Azur       T1
+2     06009            Bairols 200030195 Métropole Nice Côte d'Azur       T2
+3     06011   Beaulieu-sur-Mer 200030195 Métropole Nice Côte d'Azur       T1
+4     06013          Belvédère 200030195 Métropole Nice Côte d'Azur       T3
+5     06020 La Bollène-Vésubie 200030195 Métropole Nice Côte d'Azur       T3
+6     06021             Bonson 200030195 Métropole Nice Côte d'Azur        R
+                 LIB_EPCI_SUB  P16_EMPLT C16_ACTOCC1564
+1         CU Nice Côte d'Azur  245.91306     1010.03482
+2              CC de la Tinée   10.73870       39.24528
+3         CU Nice Côte d'Azur 1439.20384     1442.32926
+4       CC Vésubie-Mercantour  114.56129      260.00000
+5       CC Vésubie-Mercantour   99.77861      275.00000
+6 Rattachement à la Métropole   50.70275      350.00000
+                            geom
+1 MULTIPOLYGON (((1042319 630...
+2 MULTIPOLYGON (((1030461 632...
+3 MULTIPOLYGON (((1048266 629...
+4 MULTIPOLYGON (((1045871 633...
+5 MULTIPOLYGON (((1046335 633...
+6 MULTIPOLYGON (((1037221 631...</code></pre>
+</div>
+</div>
+<p>À ces données sont associées un fichier de métadonnées qui décrit les indicateurs (code + label) ainsi que les sources des données mobilisées :</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>meta <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/com_meta.csv"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(meta, <span class="at">booktabs =</span> T, <span class="at">caption =</span> <span class="st">"margin"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display page-columns page-full">
+<table class="table table-sm table-striped small">
+
+<colgroup>
+<col style="width: 12%">
+<col style="width: 52%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Libellé</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">INSEE_COM</td>
+<td style="text-align: left;">Code communal INSEE</td>
+<td style="text-align: left;">INSEE (base-cc-emploi-pop-active-2016)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NOM_COM</td>
+<td style="text-align: left;">Libellé de la commune</td>
+<td style="text-align: left;">INSEE (base-cc-emploi-pop-active-2016)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EPCI</td>
+<td style="text-align: left;">Code de la métropole d’appartenance</td>
+<td style="text-align: left;">INSEE (table-appartenance-geo-communes-19)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LIB_EPCI</td>
+<td style="text-align: left;">Libellé de la métropole d’appartenance</td>
+<td style="text-align: left;">INSEE (table-appartenance-geo-communes-19)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EPCI_SUB</td>
+<td style="text-align: left;">Code de l’EPCI entre la commune et la métropole (si adapté)</td>
+<td style="text-align: left;">RIATE (metropole.xls)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LIB_EPCI_SUB</td>
+<td style="text-align: left;">Libellé de l’EPCI entre la commune et la métropole (si adapté)</td>
+<td style="text-align: left;">RIATE (metropole.xls)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P16_EMPLT</td>
+<td style="text-align: left;">Nombre d’emplois au lieu de travail en 2016</td>
+<td style="text-align: left;">INSEE (base-cc-emploi-pop-active-2016)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C16_ACTOCC1564</td>
+<td style="text-align: left;">Nombre de personnes actives de 15 à 64 ans en 2016</td>
+<td style="text-align: left;">INSEE (base-cc-emploi-pop-active-2016)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">geom</td>
+<td style="text-align: left;">Géométries des communes</td>
+<td style="text-align: left;">IGN (CONTOUR-IRIS)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-table-caption margin-caption">margin</div></div>
+</div>
+<p>L’article présente par ailleurs dans <a href="https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#sources-mobilis%C3%A9es">une section dédiée</a> les sources de données mobilisées.</p>
+</section>
+</section>
+<section id="compiler-une-fiche-rzine-au-format-html" class="level1">
+<h1>Compiler une fiche Rzine au format HTML</h1>
+<p>La compilation d’un fichier .qmd (<em>render</em> avec Quarto) permet d’exécuter l’entièreté des blocs de code contenus dans un document Quarto au format HTML. Il est possible de réaliser cette opération de plusieurs façons :</p>
+<ul>
+<li>En utilisant le bouton <strong>Render</strong> dans l’interface RStudio:</li>
+</ul>
+<p><img src="figures/rstudio-render.png" class="img-fluid"> - Dans le terminal en utilisant la commande <code>quarto render</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>quarto render document.qmd # all formats</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>quarto render document.qmd --to pdf</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>quarto render document.qmd --to docx</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Render votre article Quarto aura pour conséquence la création d’un fichier du même nom au format HTML. Il s’agit de votre article mis en page avec le modèle rzine (paramètres inclus dans le dossier <code>_extension</code>, à ne pas modifier).</p>
+<p>Ce fichier HTML est automatiquement enregistré à la racine du répertoire source, ce sera lui qui sera publié à la fin du cycle de relecture.</p>
+</section>
+
+<section id="bibliography" class="level1 unnumbered">
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="versions-utilisées" class="level1 appendix unnumbered"><h2 class="anchored quarto-appendix-heading">Versions utilisées</h2><div class="quarto-appendix-contents">
+
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>R version 4.4.1 (2024-06-14 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 10 x64 (build 19045)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=French_France.utf8  LC_CTYPE=French_France.utf8   
+[3] LC_MONETARY=French_France.utf8 LC_NUMERIC=C                  
+[5] LC_TIME=French_France.utf8    
+
+time zone: Europe/Paris
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] kableExtra_1.4.0 sf_1.0-17        rmdwc_0.3.0     
+
+loaded via a namespace (and not attached):
+ [1] svglite_2.1.3      cli_3.6.3          knitr_1.46         rlang_1.1.4       
+ [5] xfun_0.43          stringi_1.8.3      DBI_1.2.3          KernSmooth_2.23-24
+ [9] png_0.1-8          jsonlite_1.8.8     glue_1.7.0         colorspace_2.1-0  
+[13] htmltools_0.5.8.1  e1071_1.7-16       scales_1.3.0       rmarkdown_2.26    
+[17] grid_4.4.1         munsell_0.5.1      evaluate_0.23      classInt_0.4-10   
+[21] fastmap_1.1.1      lifecycle_1.0.4    yaml_2.3.8         stringr_1.5.1     
+[25] compiler_4.4.1     htmlwidgets_1.6.4  Rcpp_1.0.13        rstudioapi_0.16.0 
+[29] systemfonts_1.0.6  digest_0.6.35      viridisLite_0.4.2  R6_2.5.1          
+[33] class_7.3-22       magrittr_2.0.3     tools_4.4.1        proxy_0.4-27      
+[37] xml2_1.3.6         units_0.8-5       </code></pre>
+</div>
+</div>
+</div></section><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliographie</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-CameronTrivedi2013" class="csl-entry" role="listitem">
+Cameron, A. C. et Trivedi, P. K. (2013). <em>Regression Analysis of Count Data</em> (2nd éd.). Cambridge University Press.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Glossaire</h2>
+
+<ol>
+<li id="fn1"><p>Voici la définition du premier terme<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Et le second<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Réutilisation</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr_fr">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{12024,
+  author = {1, Anonyme and 2, Anonyme},
+  title = {Publier un article Rzine},
+  journal = {Rzine},
+  date = {2024-09-05},
+  doi = {10.888.222},
+  langid = {fr-FR},
+  abstract = {Cette fiche présente le modèle Quarto d’un Article Rzine
+    et les consignes éditoriales élémentaires à suivre.}
+}
+</code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Veuillez citer ce travail comme suit&nbsp;:</div><div id="ref-12024" class="csl-entry quarto-appendix-citeas" role="listitem">
+1, A. et 2, A. (2024). Publier un article Rzine. <em>Rzine</em>. <a href="https://doi.org/10.888.222">https://doi.org/10.888.222</a>
+</div></div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

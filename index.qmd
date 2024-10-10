@@ -1,0 +1,440 @@
+---
+title: Publier un article Rzine
+subtitle: Mode d'emploi, critères éditoriaux, mise en page et processus de publication
+format:
+  rzine-html: default
+lang: fr-FR
+date: "2024-09-05"
+authors:
+  - name: Anonyme 1
+    affiliations:
+      - name: Comité éditorial Rzine
+        department: Laboratoire 1
+        address: 1 avenue de la recherche reproductible
+        city: Paris
+        country: France 
+        postal-code: 75013
+    orcid: 0000-0000-0000-0000
+    url: https://rzine.fr/
+  - name: Anonyme 2
+    affiliations:
+      - name: Comité éditorial Rzine
+        department: Laboratoire 2
+        city: Paris
+        country: France 
+    orcid: 0000-0000-0000-0000
+    url: https://rzine.fr/
+doi: 10.888.222
+abstract: |
+    Cette fiche présente le modèle Quarto d'un Article Rzine et les consignes éditoriales élémentaires à suivre.
+keywords: [ template, consignes éditoriales, modèle]
+---
+
+# Un article Rzine
+
+Il s'agit d'une **publication didactique** qui présente une **méthodologie**, un **type d’analyse**, **une fonctionnalité**, ou encore le **traitement** d’un certain type de données **avec le langage R**. Un article peut être principalement technique, méthodologique ou thématique ; il peut également couvrir ces trois aspects. Il est évalué par au moins deux personnes ayant les connaissances thématiques nécessaires.
+
+Le premier objectif d’un article consiste à **partager de manière pédagogique des méthodes reproductibles applicables en SHS**. La publication d’un article est ouverte à toutes et tous, quels que soient son statut et sa discipline. Un article peut être réalisée à plusieurs et présenter une dimension interdisciplinaire.
+
+Un article Rzine est rédigé avec **Quarto**, un système open-source de publication d'articles scientifiques et techniques basé sur Pandoc. Il permet d'exploiter différents langages de programmation tels que R, Python, Julia ou JavaScript. Il applique le même principe de programmation lettrée que RMarkdown (précédent modèle Rzine), dont il représente une version plus moderne et facile à adapter à différents cadres d'utilisation. Quarto peut être utilisé en ligne de commande ou à travers d'autres logiciels comme RStudio ou Visual studio code. 
+
+Le modèle Rzine Quarto est accessible ici : **[ici](lien définitif à renseigner)**
+
+- Cette documentation présente les attendus (critères d'acceptation, modèle, format).
+- Le [readme](lien définitif à renseigner) associé au dépôt de cette documentation présente le prcessus de publication
+
+
+# Critères d'acceptation
+
+Afin d’assurer la cohérence et la qualité du contenu des articles Rzine, plusieurs critères d’acceptation ont été définis. Certains de ces critères peuvent conduire au refus immédiat d’une proposition d’article par le comité éditorial, d’autres critères font l’objet d’une analyse contradictoire par plusieurs évaluateur·rice·s.
+
+Les éditeur·rice·s et les évaluateur·rice·s veilleront à ce que :
+
+- la **démonstration soit contextualisée** (champ disciplinaire d’application) et rigoureuse,
+- le **code présenté soit lisible, commenté et reproductible**,
+- les **bibliothèques mobilisées (*packages*) soient brièvement décrits et leur utilisation justifiée**,
+- les **données ou jeux de données utilisés dans le cadre de la démonstration soient obligatoirement accessibles, sourcés et librement réutilisables**.
+
+La table ci-dessous présente les critères d'évaluation détaillés d'un article : 
+
+|                | **Critères d'évaluation d'un article**                                                                                | **Comité de lecture** | **Relecteur.rice.s** |
+|----------------|---------------------------------------------------------------------------------------------------------------------|:---------------------:|:--------------------:|
+| **Thématique** | Concerne des méthodes applicables aux SHS                                                                           |           X           |           X          |
+| **Thématique** | Intérêt pour la communauté des utilisateurs de R en SHS                                                             |           X           |           X          |
+| **Thématique** | Pas de fiche Rzine similaire déjà produite                                                                          |           X           |                      |
+| **Contenu**    | Présentation des prérequis techniques et méthodologiques                                                            |                       |           X          |
+| **Contenu**    | Contextualisation de l’analyse ou méthode présentée                                                                 |                       |           X          |
+| **Contenu**    | Présentation des prérequis techniques et méthodologiques                                                            |                       |           X          |
+| **Contenu**    | Clarté et rigueur de la démonstration                                                                               |                       |           X          |
+| **Contenu**    | Rédaction dans un français ou un anglais correct                                                                    |                       |           X          |
+| **Contenu**    | Respect des consignes éditoriales détaillées ci-dessous                                                                            |           X           |                      |
+| **Contenu**    | Moins de 85000 caractères (code compris) (`*`)                                                                     |           X           |                      |
+| **Contenu**    | Pas de renvoi publicitaire explicite                                                                                |           X           |                      |
+| **Contenu**    | Acceptation des futures conditions d'utilisation [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) `**` |           X           |                      |
+| **Code**       |  Justification (et stabilité) des packages utilisés `***`                                                           |                       |           X          |
+| **Code**       | Clarté (indentation, commentaire…) et reproductibilité du code présenté                                             |                       | X                    |
+| **Données**    | Données utilisées libres, sourcées et mises à disposition                                                           |           X           |           X          |
+| **Données**    | Respect du Règlement Général sur la Protection des Données                                                          |           X           |           X          |
+
+
+::: {.callout-tip collapse="true"}
+
+## `(*)` Dénombrer le nombre de caractères contenus dans un document Quarto
+
+La bibliothèque `rmdwc` et sa fonction `txtcount()` est utile à cette fin. 
+
+```{r}
+options(scipen=999)
+library(rmdwc)
+files <- txtcount("index.qmd")
+files$chars
+```
+
+Ce document Quarto contient **```r as.numeric(files$chars)```** caractères, c'est optimal pour une publication Rzine ! 
+
+:::
+
+::: {.callout-warning collapse="true"}
+
+## `(**)` Licence d'utilisation
+
+Attention, être auteur.e d’un artcile Rzine, c’est accepter à ce que votre production soit mise à disposition sous les conditions d’utilisation de la licence [**Creative Commons BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/deed.fr).
+
+Vous autorisez ainsi quiconque à :
+
+- **Partager** — copier, distribuer et communiquer la fiche par tous moyens et sous tous formats
+- **Adapter** — remixer, transformer et créer à partir du matériel pour toute utilisation, y compris commerciale.
+
+Selon les conditions suivantes :
+
+- **Attribution** — L’Œuvre doit être crédité, un lien vers la licence doit être indiqué, tout comme les modifications effectuées à l’Oeuvre original. Ces informations doivent être indiquées par tous les moyens raisonnables, sans toutefois suggérer que l’Offrant (vous!) soutient la façon dont son Oeuvre a été utilisée.
+- **Partage dans les Mêmes Conditions** — Dans le cas où quelqu’un effectue un remix, transforme, ou crée à partir du matériel composant l’Oeuvre originale, il doit diffuser l’Oeuvre modifiée dans les même conditions, c’est à dire avec la même licence avec laquelle l’Oeuvre originale a été diffusée.
+
+Ainsi, le lien vers le code source de la fiche sera directement indiqué sur le document par le comité éditorial.
+
+:::
+
+
+::: {.callout-warning collapse="true"}
+
+## `(***)` Préférez l'usage de packages disponibles sur le CRAN
+
+Les [prérequis](https://cran.r-project.org/web/packages/policies.html) définis par les mainteneurs du CRAN pour déposer et rendre accessible une *library* R garantissent leur qualité : CRAN effectue des vérifications poussées du code et n'accepte que des packages passant sans aucun avertissement sa batterie de tests. Ces packages s'installent aussi facilement dans l'interface RStudio et ne nécessitent pas l'usage de packages externes (`devtools`) ou de procédures d'installation plus complexe.
+
+Pour une plus grande pérénité du code inclut votre article et sa réutilisation dans des contextes variés, nous vous suggérons fortement de n'utiliser que des librairies disponibles sur le CRAN. 
+
+:::
+
+
+
+# Le processus d'édition
+
+1. **Consultez attentivement les consignes éditoriales** pour être sûr.e de ne pas travailler pour rien :-)
+3. **Téléchargez l'archive de ce dépôt exemple** et décompressez la.
+3. A vous de jouer pour adapter ces fichiers modèle à votre contribution ! 
+4. Déposez votre travail sur un **dépôt GitHub**. Pour les néophytes, la démarche à suivre est détaillée ci-dessous. 
+5. **Contactez le comité de lecture Rzine** pour soumettre votre fiche à l'évaluation. Pour cela envoyez un courriel à **contact@rzine.fr** en précisant l'adresse du dépôt qui héberge votre article. Vous serez contacté dans les 15 jours suivant de courriel. 
+6. **Relecture**. Si votre soumission est validée, un relecteur·rice doté·e des connaissances techniques et thématiques nécessaires sera proposé·e à l’auteur·e dans les 15 jours (vous pouvez aussi proposer des noms=. Rzine est dans une démarche volontariste d’Open Science. La relecture des fiches Rzine est ouverte et transparente. L’identité du ou des relecteur·rice·s et l’ensemble de leurs retours sont publics. Parce qu’une fiche est un document computationnel, l’ensemble du processus se déroule sur GitHub. Vous serez donc invité·e à ouvrir les droits du dépôt GitHub de votre fiche au relecteur·rice désigné·e. Les retours et les demandes d’améliorations se feront directement sur la plateforme GitHub via des issues et des pull-request.
+7. **Publication**. Une fois les demandes d’améliorations prises en compte et la publication validée par l’évaluateur·rice, une fiche de métadonnées associée à la publication vous sera demandée afin d’assurer son référencement sur Rzine.fr. Votre dépôt est ensuite cloné dans le dépôt GitLab Rzine, et la publication déployée depuis celui-ci. Un DOI sera associé à la publication, qui sera également référencée sur HAL et sur Rzine.fr.
+  
+<br>
+```{r}
+#| echo: false
+#| label: fig-1
+#| fig-cap: "Le processus de relecture Rzine"
+
+knitr::include_graphics("figures/cycle_publi.png")
+```
+
+# Modèle Rzine et contenu
+
+Pour initier un article Rzine, il est conseillé de **télécharger le modèle accessible [ici](url à rajouter)** qui contient tous les fichiers utiles. Dézippez l'archive qui comprend :
+
+- un document Quarto **index.qmd**, qui contient l'article principal.
+- Un fichier **README.md**, à compléter à la fin de votre contribution.
+- Un fichier BibTeX **bibliography.bib**, avec la bibliographie appelée dans le fichier index.qmd.
+- Un dossier **data**, pour les données mobilisées dans l'article.
+- Un dossier **figures**, pour les éventuelles figures inclues dans l'article. 
+- Un dossier **_extensions**, à ne pas modifier et qui contient les éléments de style de la revue. 
+
+Adaptez ensuite le contenu de ces fichiers à votre soumission. L'architecture du fichier central **index.qmd** comprend plusieurs éléments à éditer : les **métadonnées du document (YAML)**, des **blocs de texte en markdown** et du **code exécutable dans des chunks**. 
+
+
+## Métadonnées du document (YAML)
+
+L’en-tête d’un document Quarto (aussi appelé YAML) est délimité par deux lignes de pointillés et contient les métadonnées et les éléments de style du document.
+
+Il sert à recueillir le titre de votre contribution et des informations supplémentaires sur votre affiliation, des mots-clés, etc. 
+
+```{markdown}
+---
+title: Le titre de votre contribution (obligatoire)
+subtitle: Son sous titre (optionnel)
+format:
+  rzine-html: default (ne pas modifier)
+lang: fr-FR (en-EN si anglais)
+date: "2024-09-05" (date de dernière modification, obligatoire)
+authors:
+  - name: Prénom Nom (obligatoire)
+    affiliations:
+      - name: L'organisme qui vous emploie (obligatoire)
+        department: Votre laboratoire d'appartenance (optionnel)
+        address: Adresse de votre laboratoire (optionnel)
+        city: Ville d'appartenance du laboratoire (optionnel)
+        country: Pays d'appartenance du laboratoire (optionnel)
+        postal-code: Code postal du laboratoire (optionnel)
+    orcid: Vos identifiants ORCID (optionnel)
+    url: URL qui renvoie vers votre blog/CV en ligne (optionnel)
+  - name: Si plusieurs auteurs (reproduire les champs ci-dessus)
+abstract: |
+    Un résumé de votre contribution, aussi présent dans le REAME.md (obligatoire)
+keywords: [un mot clé, un deuxième mot clé] (obligatoire)
+---
+```
+
+
+## Les blocs de texte (markdown)
+
+Le contenu écrit de votre contribution, expliquant **votre démarche et la succession des traitements proposés** est à écrire dans un langage de balisage léger, le **markdown**.
+
+
+### Syntaxe de base
+
+Le corps du document est constitué de texte en syntaxe Markdown. Le markdown est un langage de balisage léger et très facile à maîtriser. 
+
+Il permet de définir des niveaux de titres, de mettre en forme le texte (gras, italique), d'ajouter des liens cliquables, etc.
+
+Par exemple, le texte suivant: 
+
+```{markdown}
+Ceci est du texte en *italique*, **gras** ou en ***Gras italique***.
+
+Pour définir des listes à puces, utilisez les **tirets** :
+
+- premier élément
+- deuxième élément
+
+Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/) 
+```
+
+Se formalisera comme cela dans le fichier HTML produit à partir du R Markdown :
+
+Ceci est du texte en *italique*, **gras** ou en ***Gras italique***.
+
+Pour définir des listes à puces, utilisez les **tirets** :
+
+- premier élément
+- deuxième élément
+
+Vous pouvez également ajouter des [liens cliquables](https://rzine.fr/) 
+
+Pour en savoir plus, se reporter au [Markdown Guide](https://www.markdownguide.org/cheat-sheet/).
+
+
+### Formules mathématiques
+
+Il est possible d'écrire des formules mathématiques en langage $\TeX$. Pour cela, il suffit de délimiter le contenu $\LaTeX$ par **un ou deux** symboles **$**, ex :  
+
+```
+$$ y = \sqrt{\frac{1}{x + \beta}} $$ 
+```
+En mode ***Inline*** (**`$`**) , les formules sont incluses à l'intérieur du paragraphe courant, ex : $\sum_{i=1}^n X_i$    
+
+En mode ***Displayed*** (**`$$`**), elles apparaissent centrées et mises en exergue, ex : $$ y = \sqrt{\frac{1}{x + \beta}} $$   
+
+
+### Otions utiles avec Quarto
+
+Quarto fournit plusieurs options qui ne relèvent pas du markdown mais utiles à connaître pour paramétrer son document. 
+
+#### Callouts blocks
+
+Les [**callouts block**](https://quarto.org/docs/authoring/callouts.html) sont utiles pour attirer l'attention sur certains concepts.
+```{r}
+#| eval: false
+
+::: {.callout-tip}
+## Intéressés par la collection Rzine ?
+    
+Consultez les [articles](https://rzine.fr/articles_rzine/) déjà publiés !
+![](figures/article_rzine.png)
+:::
+  
+```
+      
+::: {.callout-tip}
+## Intéressés par la collection Rzine ?
+
+Consultez les [articles](https://rzine.fr/articles_rzine/) déjà publiés !
+
+![](figures/article_rzine.png)
+:::
+
+Nous déconseillons en revanche l'usage des classes préformatées de type `tabset` dont la sortie n'est pas adaptée aux autres sorties qu'HTML. 
+
+
+
+## Les blocs de code (chunks)
+
+Le code R est à inclure dans des chunks. Veillez à bien commenter votre code et qu'il soit aussi clair que possible. Veillez aussi à ce que l'ensemble des chunks s'exécutent sans erreur et qu'ils produisent bien les figures attendues dans le fichier HTML compilé en fin de processus. 
+
+### Initier et paramétrer un chunk
+
+Dans l'univers de Quarto, le code R s'exécute dans des ***chunks***. Pour insérer un nouveau chunk, utilisez le menu `Code > Insert Chunk` de RStudio. Vous pouvez également utiliser le raccourci clavier `Ctrl+Alt+i`.
+
+- La première ligne `{r plot_basique}` ci-dessous définit le langage de programmation mobilisé et le nom du *chunk*. Il n’est pas obligatoire de nommer un chunk, mais cela peut être utile pour localiser une erreur lors de la compilation.
+- Des options d'exécution qui permettent de paramétrer la sortie du code. Dans le *chunk* ci-dessous le code est évalué (`eval: true`), la sortie graphique sera de taille 3 (`fig-height: 3`) et de largeur 7 (`fig-width: 7`), elle dispose d'un label (`label: fig-1`) qui permet utilement de l'appeler dans le corps du texte avec `@fig-2` qui renvoie ceci dans le corps du document (@fig-2) et d'un nom qui permet la numérotation et le nommage (`fig-cap: Un plot de base`) de la figure dans le document. De nombreuses autres options sont disponibles et documentées dans la [documentation](https://quarto.org/docs/computations/execution-options.html) de Quarto. 
+- A noter que les options du chunk n'apparaîtront pas lors de la compilation du document, sauf si l'option `#| echo: fenced` est spécifiée. 
+
+```{r plot_basique}
+#| echo: fenced
+#| eval: true
+#| fig-cap: Un plot de base
+#| label: fig-2
+#| fig-height: 3
+#| fig-width: 7
+
+plot(1:10)
+```
+
+A noter qu'un document Quarto peut contenir des blocs de code issus de langages informatiques différents (ObservableJS, Python, etc). A titre d'exemple, vous pouvez consulter [ce document](https://riatecom.github.io/sageo-2023/), basé sur un document Quarto qui combine 3 langages de programmation.  
+
+
+### Insérer une image
+
+Les images insérées dans l'article sont à déposer dans le dossier `figures`.
+
+Il existe plusieurs façons d'importer une image dans un document Quarto, notamment avec du markdown de base.
+
+Dans Rzine et pour un référencement optimal de la figure (label, numérotation, citation), privilégiez l'import de celle-ci dans un *chunk* en renseignant les options `#| label` (valeur unique requise) et `#| fig-cap`.
+
+```{r}
+#| echo: fenced
+#| label: fig-3
+#| fig-cap: "Une bien belle image"
+
+knitr::include_graphics("figures/rzine-collection.png")
+```
+
+
+## Références
+
+Une bibliographie est a minima attendue. Elle sert à positionner votre contribution dans le champ thématique et/ou disciplinaire. Le glossaire est optionnel mais permet souvent utilement de rendre plus fluide le corps du document principal. 
+
+### Bibliographie
+
+Les références bibliographiques sont à inclure dans le fichier bibliographie.bib situé à la racine du répertoire Rzine. Il s'agit d'un fichier au format BibTeX, qui sert à gérer et traiter des bases bibliographiques. 
+
+```{r}
+#| eval: false
+
+@book{CameronTrivedi2013,
+  author    = {A. Colin Cameron and Pravin K. Trivedi},
+  title     = {Regression Analysis of Count Data},
+  year      = {2013},
+  edition   = {2nd},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge}
+}
+```
+
+L'appel d'une ressource bibliographique dans le texte s'effectue ensuite au moyen de l'identifiant de bibliographie (`@CameronTrivedi2013` ici) et renvoie dans le document compilé une référence correctement formatée @CameronTrivedi2013 et rajoute une section de bibliographie en fin de document. 
+
+Pour un apperçu complet des possibilités offertes pour référencer les sources de données, se reporter à [cette documentation](https://bibtex.eu/types/).
+
+### Glossaire
+
+ Pour que l’ensemble de la démonstration soit compréhensible par un public large, vous pouvez utiliser la section “glossaire” pour définir certains termes utilisés dans la fiche.
+
+Pour cela, il suffit d’utiliser la syntaxesuivante dans le corps du texte :
+
+```{r}
+#| eval: false
+
+Voici un terme bien technique qui mériterait quelques précisions [^1] et
+un second référence [^2]
+
+[^1]: Voici la définition du premier terme
+
+[^2]: Et le second
+```
+
+Au moment de la compilation du document, un numéro est associé et affiché après le “mot à définir”. Et ce mot et sa définition seront ajoutés dans la section glossaire.
+
+Un lien interactif est alors automatiquement crée entre le “mot” dans le corps du texte et sa définition dans la section “Glossaire”.
+
+Par exemple, le bloc précédent produira ceci dans le document compilé. 
+
+Voici un terme bien technique qui mériterait quelques précisions [^1] et
+un second référence [^2]
+
+[^1]: Voici la définition du premier terme
+
+[^2]: Et le second
+
+
+# Données utilisées
+
+Tout lecteur.ice doit être en mesure de reproduire la démonstration de l'article sans contrainte de réutilisation. L’intégralité des données utilisées doivent ainsi :
+
+- Être **présentées et décrites** dans l'article.
+- Être **libre d’utilisation et de diffusion**.
+- Être **mises à disposition des lecteur.rice.s**, même si ces données sont déjà en libre accès.
+- Être **associées à des métadonnées** qui permettent de retracer et comprendre ces données.
+- Respecter le [**règlement général sur la protection des données**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees).
+
+Toutes les données chargées et utilisées dans une fiche devront être stockées dans le répertoire **Data**, disponible dans le dépôt GitHub. 
+
+## Exemple
+
+L'article Rzine [Analyse Territoriale Multiscalaire](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html) peut servir d'exemple.
+
+Les données mobilisées sont accessibles dans le dossier `data` :
+
+```{r}
+#| message: false
+
+library(sf)
+
+com <- st_read("data/data.gpkg", layer = "com", quiet = TRUE)
+head(com)
+```
+À ces données sont associées un fichier de métadonnées qui décrit les indicateurs (code + label) ainsi que les sources des données mobilisées :
+
+```{r}
+library(kableExtra)
+meta <- read.csv("data/com_meta.csv")
+
+kable(meta, booktabs = T, caption = "margin")
+```
+
+L'article présente par ailleurs dans [une section dédiée](https://rzine.fr/docs/20211101_ysebaert_grasland_MTA/index.html#sources-mobilis%C3%A9es) les sources de données mobilisées. 
+
+
+# Compiler une fiche Rzine au format HTML
+
+La compilation d'un fichier .qmd (*render* avec Quarto) permet d'exécuter l'entièreté des blocs de code contenus dans un document Quarto au format HTML. Il est possible de réaliser cette opération de plusieurs façons :
+
+- En utilisant le bouton **Render** dans l'interface RStudio:
+
+![](figures/rstudio-render.png)
+- Dans le terminal en utilisant la commande `quarto render`:
+
+```{markdown}
+quarto render document.qmd # all formats
+quarto render document.qmd --to pdf
+quarto render document.qmd --to docx
+```
+
+Render votre article Quarto aura pour conséquence la création d’un fichier du même nom au format HTML. Il s’agit de votre article mis en page avec le modèle rzine (paramètres inclus dans le dossier `_extension`, à ne pas modifier).
+
+
+Ce fichier HTML est automatiquement enregistré à la racine du répertoire source, ce sera lui qui sera publié à la fin du cycle de relecture. 
+
+
+# Versions utilisées {.appendix .unnumbered}
+
+```{r session-info}
+#| echo: false
+sessionInfo()
+```

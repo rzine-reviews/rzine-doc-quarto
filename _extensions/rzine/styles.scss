@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+// Base document colors
+$link-color: #0c3762;
+$h1-font-size: 2.2rem;
+$h2-font-size: 1.8rem;
+$h3-font-size: 1.5rem;
+$code-block-bg:  #f0aa0c20;
+$btn-code-copy-color: #0c3762;
+
+
+/* link styles */
+a:hover {
+  color: white;
+  background-color:  white;
+  text-decoration: none;
+  font-weight: 700;
+  }
