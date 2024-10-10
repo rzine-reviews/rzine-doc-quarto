@@ -5,7 +5,7 @@
 
 ---
 
-Ce [document](https://rzine-reviews.github.io/rzine-doc-quarto/) présente les fichiers de référence attendus pour la soumission d'un article Rzine et les consignes éditoriales. Vous y trouverez notamment le modèle template.qmd dont vous pouvez vous servir de référence pour initier votre contribution.
+Ce [document](https://rzine-reviews.github.io/rzine-doc-quarto/) présente le modèle Quarto d’un article Rzine et les consignes éditoriales élémentaires à suivre.
 
 Le modèle quarto Rzine est accessible en saisissant cette instruction dans votre terminal :
 
